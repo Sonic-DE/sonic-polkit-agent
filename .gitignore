@@ -22,7 +22,6 @@ qtcreator-build
 moc_*
 ui_*
 Makefile
-.clang-format
 /build*/
 cmake-build-debug*
 .idea
