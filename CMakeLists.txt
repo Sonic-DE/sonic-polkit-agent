@@ -3,8 +3,8 @@ cmake_minimum_required(VERSION 3.16)
 project(polkit-kde-agent-1)
 set(PROJECT_VERSION "6.7.5")
 
-set(QT_MIN_VERSION "6.10.0")
-set(KF6_MIN_VERSION "6.26.0")
+set(QT_MIN_VERSION "6.11.0")
+set(KF6_MIN_VERSION "6.30.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 set(CMAKE_CXX_STANDARD 20)
@@ -35,6 +35,13 @@ find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
   DBusAddons
   CoreAddons
   Crash
+)
+
+find_package(KF6Kirigami ${KF6_MIN_VERSION} CONFIG)
+set_package_properties(KF6Kirigami PROPERTIES
+    DESCRIPTION "A QtQuick based components set"
+    PURPOSE "Required at runtime"
+    TYPE RUNTIME
 )
 
 include(CheckIncludeFile)
