@@ -2,7 +2,7 @@
 
 The SonicDE password prompt that appears when an app needs administrator permission to make a system change.
 
-## Unreleased
+## 6.8.2 (2026-11-10)
 
 - Now presents itself with SonicDE names and identity throughout the desktop.
 
